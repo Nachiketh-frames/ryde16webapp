@@ -106,7 +106,7 @@ export default function Vehicles() {
                 </div>
 
                 <button className="mt-8 text-sm font-medium text-white transition-colors group-hover:text-[#00c2c7]">
-                  Explore ride <span className="ml-1">→</span>
+                  Packages coming soon <span className="ml-1"></span>
                 </button>
               </div>
             </article>

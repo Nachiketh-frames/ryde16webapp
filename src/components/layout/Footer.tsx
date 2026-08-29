@@ -86,12 +86,9 @@ export default function Footer() {
                 Join the Waitlist
               </Link>
 
-              <Link
-                href="/contact"
-                className="w-fit text-sm text-white/55 transition-colors hover:text-white"
-              >
-                Contact
-              </Link>
+             <p className="w-fit text-sm text-white/55">
+                 ryde16blr@gmail.com
+              </p>
             </nav>
           </div>
         </div>

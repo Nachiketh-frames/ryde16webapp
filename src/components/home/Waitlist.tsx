@@ -47,22 +47,23 @@ export default function Waitlist() {
       <div className="mx-auto max-w-7xl">
         <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-[#0a0a0a] px-8 py-20 sm:px-12 lg:px-20 lg:py-24">
           {/* Subtle glow */}
-          <div className="pointer-events-none absolute left-1/2 top-0 h-64 w-96 -translate-x-1/2 rounded-full bg-[#00c6d7]/10 blur-[120px]" />
+          <div className="pointer-events-none absolute left-1/2 top-0 h-64 w-96 -translate-x-1/2 rounded-full bg-[#00C2C7]/10 blur-[120px]" />
 
           <div className="relative mx-auto max-w-4xl text-center">
-            <p className="text-xs font-semibold tracking-[0.3em] text-[#00c6d7]">
+            <p className="text-xs font-semibold tracking-[0.3em] text-[#00C2C7]">
               RYDE16 · COMING SOON
             </p>
 
             <h2 className="mt-8 text-5xl font-semibold leading-[0.95] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-              Give them
+              Lease smarter.
               <br />
-              <span className="text-[#00c6d7]">room to move.</span>
+              <span className="text-[#00C2C7]">Move independently.</span>
             </h2>
 
             <p className="mx-auto mt-8 max-w-2xl text-base leading-7 text-white/45 sm:text-lg">
-              Be among the first to know when Ryde16 launches in your
-              area.
+              Join the waitlist for updates on Ryde16’s launch, available
+              electric scooters, and upcoming leasing options for teenagers
+              aged 16–18.
             </p>
 
             {!submitted ? (
@@ -82,7 +83,7 @@ export default function Waitlist() {
                   onChange={(event) => setEmail(event.target.value)}
                   placeholder="Your email address"
                   disabled={loading}
-                  className="h-14 flex-1 rounded-full border border-white/10 bg-white/[0.04] px-6 text-sm text-white outline-none placeholder:text-white/25 transition-colors focus:border-[#00c6d7]/50 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="h-14 flex-1 rounded-full border border-white/10 bg-white/[0.04] px-6 text-sm text-white outline-none placeholder:text-white/25 transition-colors focus:border-[#00C2C7]/50 disabled:cursor-not-allowed disabled:opacity-50"
                 />
 
                 <button
@@ -94,7 +95,7 @@ export default function Waitlist() {
                 </button>
               </form>
             ) : (
-              <div className="mx-auto mt-12 max-w-xl rounded-full border border-[#00c6d7]/30 bg-[#00c6d7]/5 px-6 py-4 text-sm text-[#00c6d7]">
+              <div className="mx-auto mt-12 max-w-xl rounded-full border border-[#00C2C7]/30 bg-[#00C2C7]/5 px-6 py-4 text-sm text-[#00C2C7]">
                 You&apos;re on the list. We&apos;ll keep you posted.
               </div>
             )}

@@ -2,21 +2,21 @@ export default function Problem() {
   const problems = [
     {
       number: "01",
-      title: "Dependence",
+      title: "A short ownership window",
       description:
-        "Every trip becomes another pickup, drop-off, or coordination problem for parents.",
+        "Teenagers aged 16–18 may need a speed-limited electric scooter for only around two years before becoming eligible to obtain a driving licence.",
     },
     {
       number: "02",
-      title: "Limited options",
+      title: "A ₹65,000–₹70,000 purchase",
       description:
-        "Getting around independently isn't always practical with existing transport options.",
+        "Buying a suitable scooter can mean paying approximately ₹65,000–₹70,000 upfront for a vehicle that may not remain useful for the same purpose after the teenager turns 18.",
     },
     {
       number: "03",
-      title: "Parent uncertainty",
+      title: "Depreciation and resale",
       description:
-        "Teenage independence shouldn't mean parents lose visibility, structure, or peace of mind.",
+        "The family also takes on depreciation, resale uncertainty, and the responsibility of finding another buyer when the vehicle is no longer needed.",
     },
   ];
 
@@ -30,21 +30,22 @@ export default function Problem() {
 
       <div className="relative mx-auto max-w-7xl">
         {/* Section intro */}
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-[#00C2C7]">
             The problem
           </p>
 
           <h2 className="font-[family-name:var(--font-display)] text-4xl font-bold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-7xl">
-            Getting around shouldn't mean{" "}
-            <span className="text-white/35">giving up control.</span>
+            Buying a two-year
+            <br />
+            <span className="text-white/35">vehicle makes little sense.</span>
           </h2>
 
-          <p className="mt-8 max-w-2xl text-base leading-7 text-white/50 sm:text-lg">
-            For teenagers, getting to school, tuition, sports, and friends
-            often means depending on parents, relying on inconsistent
-            transport, or using options that weren't designed with them in
-            mind.
+          <p className="mt-8 max-w-3xl text-base leading-7 text-white/50 sm:text-lg">
+            For many families, the need is temporary. A teenager may need
+            independent transport between 16 and 18, but purchasing a
+            speed-limited electric scooter creates a large ownership cost for
+            a relatively short period of use.
           </p>
         </div>
 
@@ -76,15 +77,52 @@ export default function Problem() {
           ))}
         </div>
 
+        {/* Financial comparison */}
+        <div className="mt-20 grid gap-4 md:grid-cols-2">
+          <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-8 lg:p-10">
+            <p className="text-xs font-medium uppercase tracking-[0.25em] text-white/30">
+              Traditional purchase
+            </p>
+
+            <h3 className="mt-6 text-3xl font-semibold tracking-tight">
+              Pay for the whole vehicle.
+            </h3>
+
+            <p className="mt-4 text-sm leading-6 text-white/40">
+              Pay the purchase price upfront, use the scooter for the relevant
+              period, and absorb depreciation and resale risk.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-[#00C2C7]/20 bg-[#00C2C7]/[0.035] p-8 lg:p-10">
+            <p className="text-xs font-medium uppercase tracking-[0.25em] text-[#00C2C7]">
+              The Ryde16 approach
+            </p>
+
+            <h3 className="mt-6 text-3xl font-semibold tracking-tight">
+              Pay for the mobility you need.
+            </h3>
+
+            <p className="mt-4 text-sm leading-6 text-white/50">
+              Lease the vehicle through a structured arrangement designed to
+              reduce the upfront burden and avoid direct ownership
+              depreciation.
+            </p>
+          </div>
+        </div>
+
         {/* Transition */}
         <div className="mt-24 border-t border-white/10 pt-10">
           <p className="text-sm uppercase tracking-[0.2em] text-white/30">
-            There has to be a better way.
+            The better question
           </p>
 
-          <p className="mt-4 text-2xl font-medium tracking-tight text-white sm:text-3xl">
-            That’s where{" "}
-            <span className="text-[#00C2C7]">Ryde16</span> comes in.
+          <p className="mt-4 max-w-4xl text-2xl font-medium tracking-tight text-white sm:text-3xl">
+            Why purchase an expensive vehicle for a short-term need when you
+            can{" "}
+            <span className="text-[#00C2C7]">
+              lease the mobility instead?
+            </span>
           </p>
         </div>
       </div>

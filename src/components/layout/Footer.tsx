@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -11,21 +12,36 @@ export default function Footer() {
             <Link
               href="/"
               aria-label="Ryde16 home"
-              className="inline-block"
+              className="flex h-12 w-fit items-center"
             >
-              <span className="text-2xl font-bold tracking-[-0.04em]">
-                RYDE<span className="text-[#00c6d7]">16</span>
-              </span>
+              <Image
+                src="/images/ryde16-logo.png"
+                alt="Ryde16"
+                width={280}
+                height={80}
+                className="h-auto w-[220px]"
+                priority
+              />
             </Link>
 
             <p className="mt-6 max-w-sm text-sm leading-6 text-white/40">
-              A smarter way for teenagers to access electric mobility —
-              built around their independence and your peace of mind.
+              A leasing-first mobility platform helping parents provide
+              suitable electric scooters for teenagers aged 16–18 without
+              unnecessary ownership costs.
             </p>
 
             <p className="mt-6 text-xs font-medium tracking-[0.2em] text-[#00c6d7]">
               COMING SOON · INDIA
             </p>
+
+            <a
+              href="https://www.instagram.com/ryde16.official/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block text-sm text-white/55 transition-colors hover:text-white"
+            >
+              Instagram
+            </a>
           </div>
 
           {/* Explore */}
@@ -53,7 +69,7 @@ export default function Footer() {
                 href="#rides"
                 className="w-fit text-sm text-white/55 transition-colors hover:text-white"
               >
-                Available Rides
+                Explore Ryde16
               </Link>
 
               <Link
@@ -86,8 +102,8 @@ export default function Footer() {
                 Join the Waitlist
               </Link>
 
-             <p className="w-fit text-sm text-white/55">
-                 ryde16blr@gmail.com
+              <p className="w-fit text-sm text-white/55">
+                ryde16blr@gmail.com
               </p>
             </nav>
           </div>

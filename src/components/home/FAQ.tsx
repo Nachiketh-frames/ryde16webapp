@@ -4,34 +4,44 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Who is Ryde16 for?",
+    question: "What exactly is Ryde16?",
     answer:
-      "Ryde16 is being built for teenagers who want more independence in getting around, and for parents who want that independence to come with structure, visibility, and support.",
+      "Ryde16 is a platform being built to help parents lease suitable electric scooters for teenagers aged 16–18. It is designed to make short-term mobility more practical than purchasing an expensive vehicle outright.",
   },
   {
-    question: "What kind of vehicles will be available?",
+    question: "Why lease instead of buy?",
     answer:
-      "Ryde16 will offer a curated selection of electric mobility options suited to different everyday needs. The exact vehicles and specifications will depend on our partner network and availability.",
+      "A suitable electric scooter may cost approximately ₹65,000–₹70,000. Since a teenager may use a speed-limited vehicle for only around two years before becoming eligible for a driving licence, purchasing can create a large upfront cost, depreciation, and resale burden. Leasing is designed to reduce that ownership burden.",
   },
   {
-    question: "How does the leasing process work?",
+    question: "Will leasing definitely cost less?",
     answer:
-      "You choose a suitable ride, submit the required information, and Ryde16 helps facilitate the next steps around the lease, setup, service, and support.",
+      "Ryde16 is being designed to reduce the upfront and ownership burden compared with purchasing. The exact savings will depend on the vehicle, lease duration, supplier terms, and final pricing, which are still being developed.",
+  },
+  {
+    question: "Who is the customer?",
+    answer:
+      "Parents are the primary customers and decision-makers. Teenagers are the intended riders, while the application and leasing arrangement are designed around parental involvement.",
+  },
+  {
+    question: "What vehicles will be available?",
+    answer:
+      "Ryde16 is working toward a curated selection of suitable electric scooters. Exact models, specifications, pricing, and packages will depend on our partner network and availability.",
+  },
+  {
+    question: "How will the leasing process work?",
+    answer:
+      "Parents will be able to explore suitable options, select a preferred vehicle, provide the required information, and begin the leasing process through Ryde16. Final terms and requirements will be announced closer to launch.",
   },
   {
     question: "Can parents stay involved?",
     answer:
-      "Yes. Parent involvement is a core part of the Ryde16 experience. The platform is designed to give parents greater visibility and confidence while allowing teenagers more independence.",
+      "Yes. Parent involvement is central to the Ryde16 experience. The platform is being designed around parental decision-making, structure, and confidence while giving teenagers more practical independence.",
   },
   {
-    question: "Where will Ryde16 launch?",
+    question: "When will Ryde16 launch?",
     answer:
-      "Ryde16 is currently preparing for its initial launch in India. Availability will begin in selected locations before expanding further.",
-  },
-  {
-    question: "When can I get a Ryde16?",
-    answer:
-      "Ryde16 is currently coming soon. Join the waitlist to be among the first to hear when rides become available in your area.",
+      "Ryde16 is currently preparing for its initial launch in India. Join the waitlist to receive updates as the launch location, vehicles, and leasing options become available.",
   },
 ];
 
@@ -46,18 +56,19 @@ export default function FAQ() {
       <div className="mx-auto max-w-5xl">
         {/* Heading */}
         <div className="max-w-3xl">
-          <p className="text-xs font-semibold tracking-[0.3em] text-[#00c6d7]">
+          <p className="text-xs font-semibold tracking-[0.3em] text-[#00C2C7]">
             FAQ
           </p>
 
           <h2 className="mt-8 text-5xl font-semibold leading-[0.95] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
             Questions before
             <br />
-            <span className="text-[#00c6d7]">you ride.</span>
+            <span className="text-[#00C2C7]">you lease.</span>
           </h2>
 
           <p className="mt-8 max-w-2xl text-base leading-7 text-white/45 sm:text-lg">
-            The important stuff, answered without the marketing fluff.
+            The important details about the problem Ryde16 is solving and the
+            leasing experience we are building.
           </p>
         </div>
 
@@ -67,15 +78,10 @@ export default function FAQ() {
             const isOpen = openIndex === index;
 
             return (
-              <div
-                key={faq.question}
-                className="border-b border-white/10"
-              >
+              <div key={faq.question} className="border-b border-white/10">
                 <button
                   type="button"
-                  onClick={() =>
-                    setOpenIndex(isOpen ? null : index)
-                  }
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
                   className="flex w-full items-center justify-between gap-8 py-7 text-left"
                   aria-expanded={isOpen}
                 >

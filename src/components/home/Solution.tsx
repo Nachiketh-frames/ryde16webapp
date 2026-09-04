@@ -2,21 +2,21 @@ export default function Solution() {
   const pillars = [
     {
       number: "01",
-      title: "Access",
+      title: "Lease instead of buy",
       description:
-        "A simpler way for teenagers to access electric mobility for the places they already need to go.",
+        "Access a suitable electric scooter without paying the full purchase price upfront.",
     },
     {
       number: "02",
-      title: "Structure",
+      title: "Reduce ownership burden",
       description:
-        "A guided experience designed around the needs of both teenagers and their parents.",
+        "Avoid taking direct ownership depreciation and the uncertainty of reselling a vehicle after the teenager turns 18.",
     },
     {
       number: "03",
-      title: "Support",
+      title: "Built around the 16–18 window",
       description:
-        "Service, assistance, and the infrastructure needed to make everyday mobility easier to manage.",
+        "A mobility arrangement designed around the period when teenagers need independence before becoming eligible for a driving licence.",
     },
   ];
 
@@ -32,22 +32,23 @@ export default function Solution() {
         <div className="grid gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-end">
           <div>
             <p className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-[#00C2C7]">
-              The Ryde16 difference
+              The Ryde16 solution
             </p>
 
             <h2 className="font-[family-name:var(--font-display)] text-4xl font-bold leading-[1.05] tracking-[-0.04em] sm:text-5xl lg:text-7xl">
-              Independence for them.
+              Lease the vehicle.
               <br />
               <span className="text-[#00C2C7]">
-                Confidence for you.
+                Avoid the ownership burden.
               </span>
             </h2>
           </div>
 
           <p className="max-w-xl text-base leading-7 text-white/50 sm:text-lg lg:pb-2">
-            Ryde16 is building a structured way for teenagers to access
-            electric mobility — designed around their independence while
-            giving parents a clearer role in the experience.
+            Ryde16 is building a platform that helps parents access suitable
+            electric scooters for teenagers aged 16–18 through a structured
+            leasing experience. The goal is to make short-term mobility more
+            practical and financially sensible than purchasing outright.
           </p>
         </div>
 
@@ -83,11 +84,11 @@ export default function Solution() {
 
         {/* Bottom statement */}
         <div className="mt-20 border-t border-white/10 pt-10">
-          <p className="max-w-4xl text-2xl font-medium leading-tight tracking-tight text-white/80 sm:text-3xl lg:text-4xl">
-            Not just a vehicle.
+          <p className="max-w-5xl text-2xl font-medium leading-tight tracking-tight text-white/80 sm:text-3xl lg:text-4xl">
+            Instead of owning a vehicle that may become unnecessary,
             <span className="text-white/30">
               {" "}
-              A better way to give them room to move.
+              lease the mobility they need for the years it matters.
             </span>
           </p>
         </div>

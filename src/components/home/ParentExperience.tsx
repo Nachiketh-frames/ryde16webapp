@@ -1,15 +1,15 @@
 const perspectives = [
   {
-    label: "FOR THEM",
-    title: "More freedom.",
+    label: "FOR TEENAGERS",
+    title: "Mobility before 18.",
     description:
-      "A more independent way to get where they need to go, without making every trip depend on someone else.",
+      "A practical way to travel to school, tuition, sports, and everyday destinations during the period before they become eligible for a driving licence.",
   },
   {
-    label: "FOR YOU",
-    title: "More confidence.",
+    label: "FOR PARENTS",
+    title: "Less ownership burden.",
     description:
-      "A mobility experience designed with parents in mind, rather than treating them as an afterthought.",
+      "A leasing-first alternative to paying ₹65,000–₹70,000 upfront for a vehicle that may become less useful after only around two years.",
   },
 ];
 
@@ -20,25 +20,26 @@ export default function ParentExperience() {
         {/* Heading */}
         <div className="grid gap-12 lg:grid-cols-2 lg:items-end">
           <div>
-            <p className="text-xs font-semibold tracking-[0.3em] text-[#00c6d7]">
+            <p className="text-xs font-semibold tracking-[0.3em] text-[#00C2C7]">
               BUILT FOR BOTH SIDES
             </p>
 
             <h2 className="mt-8 text-5xl font-semibold leading-[0.95] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-              Independence for
+              Practical mobility
               <br />
-              them.
+              for them.
               <br />
-              <span className="text-[#00c6d7]">
-                Confidence for you.
+              <span className="text-[#00C2C7]">
+                Smarter ownership for you.
               </span>
             </h2>
           </div>
 
           <p className="max-w-xl text-base leading-7 text-white/50 lg:pb-2 lg:text-lg">
-            Ryde16 is building a structured way for teenagers to access
-            electric mobility — designed around their independence while
-            giving parents a clearer role in the experience.
+            Ryde16 is designed around a simple reality: teenagers may need
+            independent transport before 18, but families should not have to
+            purchase and depreciate an expensive vehicle for a short-term
+            requirement.
           </p>
         </div>
 
@@ -51,7 +52,7 @@ export default function ParentExperience() {
             >
               <div className="flex h-full flex-col">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold tracking-[0.25em] text-[#00c6d7]">
+                  <span className="text-xs font-semibold tracking-[0.25em] text-[#00C2C7]">
                     {item.label}
                   </span>
 
@@ -77,8 +78,8 @@ export default function ParentExperience() {
         {/* Closing statement */}
         <div className="mt-24 border-t border-white/10 pt-10">
           <p className="max-w-4xl text-3xl font-medium leading-tight tracking-tight text-white/30 sm:text-4xl lg:text-5xl">
-            <span className="text-white">One experience.</span>{" "}
-            Built for two perspectives.
+            <span className="text-white">A short-term need.</span>{" "}
+            A more sensible way to meet it.
           </p>
         </div>
       </div>

@@ -28,7 +28,6 @@ export default function Hero() {
       {/* Main content */}
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center justify-center px-6 pb-20 pt-32 lg:px-8">
         <div className="max-w-5xl text-center">
-
           {/* Eyebrow */}
           <div className="mb-7 flex items-center justify-center gap-3">
             <span className="h-px w-8 bg-[#00C2C7]/60" />
@@ -42,28 +41,33 @@ export default function Hero() {
 
           {/* Headline */}
           <h1 className="text-5xl font-bold leading-[0.94] tracking-[-0.055em] sm:text-6xl md:text-7xl lg:text-[92px]">
-            Give them the
+            Don&apos;t buy a
             <br />
-            <span className="text-[#00C2C7]">
-              freedom to move.
-            </span>
+            <span className="text-[#00C2C7]">two-year vehicle.</span>
           </h1>
 
           {/* Description */}
-          <p className="mx-auto mt-8 max-w-2xl text-base leading-7 text-white/55 sm:text-lg sm:leading-8">
-            Ryde16 is building a smarter way for teenagers to access electric
-            mobility — designed around their independence and your peace of
-            mind.
+          <p className="mx-auto mt-8 max-w-3xl text-base leading-7 text-white/55 sm:text-lg sm:leading-8">
+            Ryde16 helps parents lease suitable electric scooters for
+            teenagers aged 16–18, instead of purchasing an expensive vehicle
+            that may become less useful when they turn 18.
+          </p>
+
+          {/* Supporting line */}
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-white/35 sm:text-base">
+            Lower the upfront burden. Avoid direct ownership depreciation.
+            Lease the mobility they need.
           </p>
 
           {/* CTAs */}
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
-  href="#waitlist"
-  className="group inline-flex items-center justify-center rounded-full bg-white px-7 py-4 text-sm font-semibold transition-all duration-300 hover:scale-[1.03] hover:bg-white/90"
-  style={{ color: "#080808" }}
->
+              href="#waitlist"
+              className="group inline-flex items-center justify-center rounded-full bg-white px-7 py-4 text-sm font-semibold transition-all duration-300 hover:scale-[1.03] hover:bg-white/90"
+              style={{ color: "#080808" }}
+            >
               Join the Waitlist
+
               <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>
@@ -73,13 +77,13 @@ export default function Hero() {
               href="#how-it-works"
               className="group inline-flex items-center justify-center rounded-full border border-white/15 px-7 py-4 text-sm font-semibold text-white transition-all duration-300 hover:border-white/30 hover:bg-white/[0.04]"
             >
-              Discover Ryde16
+              See How It Works
+
               <span className="ml-2 transition-transform duration-300 group-hover:translate-y-1">
                 ↓
               </span>
             </Link>
           </div>
-
         </div>
       </div>
 
